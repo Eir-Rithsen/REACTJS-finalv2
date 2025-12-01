@@ -1,0 +1,101 @@
+:root {
+  --bg: #222;
+  --card: #fff;
+  --primary: #0077ff;
+  --primary-dark: #005ccc;
+}
+
+body {
+  background-color: var(--bg);
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main {
+  margin-top: 1rem;
+}
+
+/* Navbar */
+.navbar-custom {
+  background: #111;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-custom a { color: #fff; text-decoration: none; margin-right: 1rem; }
+.navbar-brand { font-weight: 700; }
+
+/* Products grid */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Card */
+.product-card {
+  background: var(--card);
+  color: #111;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.15s;
+}
+.product-card:hover { transform: translateY(-4px); }
+.product-card img { width: 100%; height: 180px; object-fit: contain; }
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Cart card */
+.cart-card {
+  background: var(--card);
+  color: #111;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* Modal backdrop quick style (for our ConfirmModal) */
+.modal-backdrop-custom {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.6);
+  z-index: 1050;
+}
+.modal-content-custom {
+  background: var(--card);
+  color: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 420px;
+}
+
+/* Small helpers */
+.text-white-weak { color: rgba(255,255,255,0.85); }
