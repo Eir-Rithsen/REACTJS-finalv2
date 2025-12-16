@@ -43,7 +43,7 @@ Abre tu terminal y ejecuta:
 
 git clone [https://github.com/Eir-Rithsen/REACTJS-finalv2.git](https://github.com/Eir-Rithsen/REACTJS-finalv2.git)
 cd REACTJS-finalv2
-
+# STRUCTURE
 ## src/
 ### main.jsx
 ### App.jsx
